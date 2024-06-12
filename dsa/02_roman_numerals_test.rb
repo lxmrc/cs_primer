@@ -35,6 +35,10 @@ class RomanNumeralsTest < Minitest::Test
     assert_equal 'XXVII', RomanNumerals.to_roman(27)
   end
 
+  def test_39
+    assert_equal 'XXXIX', RomanNumerals.to_roman(39)
+  end
+
   def test_48
     assert_equal 'XLVIII', RomanNumerals.to_roman(48)
   end
@@ -55,6 +59,10 @@ class RomanNumeralsTest < Minitest::Test
     assert_equal 'CLXIII', RomanNumerals.to_roman(163)
   end
 
+  def test_246
+    assert_equal 'CCXLVI', RomanNumerals.to_roman(246)
+  end
+
   def test_402
     assert_equal 'CDII', RomanNumerals.to_roman(402)
   end
@@ -63,12 +71,20 @@ class RomanNumeralsTest < Minitest::Test
     assert_equal 'DLXXV', RomanNumerals.to_roman(575)
   end
 
+  def test_789
+    assert_equal 'DCCLXXXIX', RomanNumerals.to_roman(789)
+  end
+
   def test_911
     assert_equal 'CMXI', RomanNumerals.to_roman(911)
   end
 
   def test_1024
     assert_equal 'MXXIV', RomanNumerals.to_roman(1024)
+  end
+
+  def test_2421
+    assert_equal 'MMCDXXI', RomanNumerals.to_roman(2421)
   end
 
   def test_3000

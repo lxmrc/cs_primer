@@ -7,7 +7,7 @@ module RomanNumerals
 
     if remaining >= 1000
       roman += "M" * (remaining / 1000)
-      remaining -= (remaining / 1000) * 1000
+      remaining = remaining % 1000
     end
 
     if remaining >= 900
@@ -27,7 +27,7 @@ module RomanNumerals
 
     if remaining >= 100
       roman += "C" * (remaining / 100)
-      remaining -= (remaining / 100) * 100
+      remaining = remaining % 100
     end
 
     if remaining >= 90
@@ -47,7 +47,7 @@ module RomanNumerals
     
     if remaining >= 10
       roman += "X" * (remaining / 10)
-      remaining -= (remaining / 10) * 10
+      remaining = remaining % 10
     end
 
     if remaining == 9
